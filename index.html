@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Precision Stopwatch</h1>
+            <p class="subtitle">Measure time with millisecond accuracy</p>
+        </header>
+        
+        <div class="stopwatch-display">
+            <div class="time-display" id="display">00:00:00</div>
+            <div class="controls">
+                <button class="btn btn-start" id="startBtn">
+                    <i class="fas fa-play"></i> Start
+                </button>
+                <button class="btn btn-pause" id="pauseBtn">
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button class="btn btn-lap" id="lapBtn">
+                    <i class="fas fa-flag"></i> Lap
+                </button>
+                <button class="btn btn-reset" id="resetBtn">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </div>
+        
+        <div class="laps-container">
+            <div class="laps-header">
+                <span>Lap</span>
+                <span>Time</span>
+                <span>Split</span>
+            </div>
+            <ul class="lap-list" id="lapList">
+                <li class="no-laps">No laps recorded yet</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
